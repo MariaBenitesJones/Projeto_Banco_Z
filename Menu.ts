@@ -1,8 +1,13 @@
 import readlinesync = require("readline-sync");
 import { colors } from "./src/util/Colors"; //Importamos a Classe Colors, que permite adicionar Cores nos comandos de saída de dados.
+import { Conta } from "./src/model/Conta";
 
 export function main() {
+
     let opcao: number;
+
+    let c1: Conta = new Conta(1,123, 1, "Maria", 1000000);
+    c1.visualizar();
 
     while (true) {
 
