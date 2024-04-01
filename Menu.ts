@@ -1,13 +1,33 @@
 import readlinesync = require("readline-sync");
 import { colors } from "./src/util/Colors"; //Importamos a Classe Colors, que permite adicionar Cores nos comandos de saída de dados.
 import { Conta } from "./src/model/Conta";
+import { ContaCorrente } from "./src/model/ContaCorrente";
+import { ContaPoupanca } from "./src/model/ContaPoupanca";
 
 export function main() {
 
     let opcao: number;
 
-    let c1: Conta = new Conta(1,123, 1, "Maria", 1000000);
+    const c1: Conta = new Conta(1, 123, 1, "Maria", 1000000);
     c1.visualizar();
+    // c1.sacar(5000);
+    // c1.visualizar();
+    // c1.depositar(5000);
+    // c1.visualizar();
+
+    const cc1: ContaCorrente = new ContaCorrente(2, 456, 1, "Natalia", 1000, 1000);
+    cc1.visualizar();
+    // cc1.sacar(1000);
+    // cc1.visualizar();
+    // cc1.depositar(5000);
+    // cc1.visualizar();
+
+    const cp1: ContaPoupanca = new ContaPoupanca (3, 789, 2, "Elias", 1000, 5);
+    cp1.visualizar();
+    // cp1.sacar(1000);
+    // cp1.visualizar();
+    // cp1.depositar(5000);
+    // cp1.visualizar();
 
     while (true) {
 
