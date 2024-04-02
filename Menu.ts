@@ -8,22 +8,24 @@ export function main() {
 
     let opcao: number;
 
-    const c1: Conta = new Conta(1, 123, 1, "Maria", 1000000);
-    c1.visualizar();
-    // c1.sacar(5000);
-    // c1.visualizar();
-    // c1.depositar(5000);
-    // c1.visualizar();
+    // Por conta ser abstrato não é mais possivel criar objetos ligados completamente a ela, somente por herança
 
-    const cc1: ContaCorrente = new ContaCorrente(2, 456, 1, "Natalia", 1000, 1000);
-    cc1.visualizar();
+    // const c1: Conta = new Conta(1, 123, 1, "Maria", 1000000);
+    // c1.visualizar();
+    // // c1.sacar(5000);
+    // // c1.visualizar();
+    // // c1.depositar(5000);
+    // // c1.visualizar();
+
+    // const cc1: ContaCorrente = new ContaCorrente(2, 456, 1, "Natalia", 1000, 1000);
+    // cc1.visualizar();
     // cc1.sacar(1000);
     // cc1.visualizar();
     // cc1.depositar(5000);
     // cc1.visualizar();
 
-    const cp1: ContaPoupanca = new ContaPoupanca (3, 789, 2, "Elias", 1000, 5);
-    cp1.visualizar();
+    // const cp1: ContaPoupanca = new ContaPoupanca (3, 789, 2, "Elias", 1000, 5);
+    // cp1.visualizar();
     // cp1.sacar(1000);
     // cp1.visualizar();
     // cp1.depositar(5000);

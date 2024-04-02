@@ -1,4 +1,4 @@
-export class Conta {
+export abstract class Conta {
 
     // Atributos do objeto da Classe Conta 
     private _numero: number;
