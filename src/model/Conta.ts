@@ -120,17 +120,17 @@ export abstract class Conta {
                 tipo = "Conta Corrente";
                 break
             case 2:
-                tipo = "Conta Poupansa";
+                tipo = "Conta Poupanca";
                 break;
         }
 
         console.log("***********************************");
         console.log("Dados da conta")
         console.log("***********************************");
-        console.log(`Numero da coonta: ${this._numero}`);
+        console.log(`Numero da conta: ${this._numero}`);
         console.log(`Numero da agencia: ${this._agencia}`);
         console.log(`Tipo da conta: ${tipo}`);
-        console.log(`Titular da coonta: ${this._titular}`);
+        console.log(`Titular da conta: ${this._titular}`);
         console.log(`saldo da conta: ${this._saldo}`);
     }
 }
